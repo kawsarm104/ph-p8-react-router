@@ -11,18 +11,31 @@ const Navigation = () => {
       bg="primary"
       variant="dark"
       sticky="top"
-      className="mb-5"
+      className=""
     >
       <Container fluid>
-        
         <Navbar.Brand to="/">React-Router-Bootstrap</Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto ">
-            <Nav.Link as={Link} to="/">Home</Nav.Link>
-            <Nav.Link as={Link} to="/users">Users</Nav.Link>
-            <Nav.Link as={Link} to="/about">About</Nav.Link>
-            <Nav.Link as={Link} to="/contact">Contact</Nav.Link>
+            <Nav.Link as={Link} to="/">
+              Home
+            </Nav.Link>
+            <Nav.Link as={Link} to="/users">
+              Users
+            </Nav.Link>
+            <Nav.Link as={Link} to="/users">
+              News Api
+            </Nav.Link>
+            <Nav.Link as={Link} to="/users">
+             Meal DB
+            </Nav.Link>
+            <Nav.Link as={Link} to="/about">
+              About
+            </Nav.Link>
+            <Nav.Link as={Link} to="/contact">
+              Contact
+            </Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>

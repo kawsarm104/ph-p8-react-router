@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { Spinner } from 'react-bootstrap';
 import User from '../user/User';
 
 const Users = () => {
@@ -13,10 +14,12 @@ const Users = () => {
            })
     },[])
     return (
-        <div className="row text-center ">
+    <>
+        { users.length === 0 ?<div className="text-center"> <Spinner  animation="grow" variant="primary" /> </div>: <div className="row text-center ">
             
             {users.map(user => <User key={user.id} user={user}/>)}
-        </div>
+        </div>}
+       </>
     );
 };
 
